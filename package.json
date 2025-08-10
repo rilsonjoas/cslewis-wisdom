@@ -1,0 +1,46 @@
+{
+  "name": "cslewis-wisdom",
+  "version": "1.0.0",
+  "description": "CLI tool that displays multilingual C.S. Lewis wisdom quotes in your terminal",
+  "main": "index.js",
+  "type": "module",
+  "bin": {
+    "cslewis-wisdom": "./index.js"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node index.js"
+  },
+  "keywords": [
+    "cslewis",
+    "cli",
+    "quotes",
+    "wisdom",
+    "terminal",
+    "multilingual",
+    "portuguese",
+    "english",
+    "spanish",
+    "inspirational"
+  ],
+  "author": "Rilson Joás",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/rilsonjoas/cslewis-wisdom"
+  },
+  "homepage": "https://github.com/rilsonjoas/cslewis-wisdom#readme",
+  "bugs": {
+    "url": "https://github.com/rilsonjoas/cslewis-wisdom/issues"
+  },
+  "engines": {
+    "node": ">=14.0.0"
+  },
+  "files": [
+    "index.js",
+    "README.md"
+  ],
+  "dependencies": {
+    "chalk": "^5.5.0"
+  }
+}
