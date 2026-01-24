@@ -1,0 +1,38 @@
+{
+  "pt": {
+    "title": "💭 Sabedoria de C.S. Lewis",
+    "author": "— C.S. Lewis",
+    "askAnother": "Deseja outra pérola de sabedoria? (s/n) ",
+    "goodbye": "\nAté a próxima! Que a sabedoria te acompanhe."
+  },
+  "en": {
+    "title": "💭 C.S. Lewis Wisdom",
+    "author": "— C.S. Lewis",
+    "askAnother": "Would you like another pearl of wisdom? (y/n) ",
+    "goodbye": "\nUntil next time! May wisdom be with you."
+  },
+  "es": {
+    "title": "💭 Sabiduría de C.S. Lewis",
+    "author": "— C.S. Lewis",
+    "askAnother": "¿Te gustaría otra perla de sabiduría? (s/n) ",
+    "goodbye": "\n¡Hasta la próxima! Que la sabiduría te acompañe."
+  },
+  "fr": {
+    "title": "💭 Sagesse de C.S. Lewis",
+    "author": "— C.S. Lewis",
+    "askAnother": "Voulez-vous une autre perle de sagesse ? (o/n) ",
+    "goodbye": "\nÀ la prochaine ! Que la sagesse vous accompagne."
+  },
+  "de": {
+    "title": "💭 Weisheit von C.S. Lewis",
+    "author": "— C.S. Lewis",
+    "askAnother": "Möchten Sie eine weitere Perle der Weisheit? (j/n) ",
+    "goodbye": "\nBis zum nächsten Mal! Möge die Weisheit mit dir sein."
+  },
+  "it": {
+    "title": "💭 Saggezza di C.S. Lewis",
+    "author": "— C.S. Lewis",
+    "askAnother": "Desideri un'altra perla di saggezza? (s/n) ",
+    "goodbye": "\nA presto! Che la saggezza sia con te."
+  }
+}

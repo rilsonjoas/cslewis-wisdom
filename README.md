@@ -7,11 +7,11 @@
 
 ## ✨ Features
 
-- 🌍 **Multilingual Support**: Automatically detects your system language and displays quotes in Portuguese, English, or Spanish
-- 📚 **Rich Quote Collection**: Over 40 carefully selected quotes from C.S. Lewis
-- 🎨 **Beautiful Terminal Display**: Clean, colorful formatting that's easy on the eyes
-- ⚡ **Lightweight**: Minimal dependencies for fast installation and execution
-- 🔄 **Interactive**: Ask for more quotes or exit gracefully
+- 🌍 **Multilingual Support**: Automatically detects your system language. Now supports Portuguese, English, Spanish, French, German, and Italian.
+- 📚 **Rich Quote Collection**: Over 60 carefully selected quotes, now categorized.
+- 🎨 **Enhanced Terminal UI**: Uses `boxen` for a professional and elegant display.
+- 🎯 **Advanced CLI**: Filter quotes by category and manually specify languages via flags.
+- 🔄 **Interactive**: Ask for more quotes or exit gracefully.
 
 ## 🚀 Installation
 
@@ -27,92 +27,83 @@ npm install cslewis-wisdom
 
 ## 📖 Usage
 
-After global installation, simply run:
+Simply run:
 
 ```bash
 cslewis-wisdom
 ```
 
-Or if installed locally:
+### 🎯 Flags and Options
+
+Customize your experience using flags:
+
+| Flag | Description | Options |
+| --- | --- | --- |
+| `-l, --lang` | Specify language | `pt`, `en`, `es`, `fr`, `de`, `it` |
+| `-c, --category` | Filter by category | `faith`, `friendship`, `love`, `education`, `literature`, `character`, `growth`, `learning`, `art`, `humility`, `courage` |
+| `-v, --version` | Show version | |
+
+**Examples:**
 
 ```bash
-npx cslewis-wisdom
-```
+# Filter by faith in English
+cslewis-wisdom --lang en --category faith
 
-The application will:
-1. Display a random C.S. Lewis quote in your system language
-2. Ask if you'd like another quote
-3. Continue until you choose to exit
+# Search for wisdom about love in Italian
+cslewis-wisdom -l it -c love
+```
 
 ## 🌐 Language Support
 
 The application automatically detects your system locale and displays content in:
 
-- **Portuguese** (`pt`) - Default for `pt_*` locales
-- **English** (`en`) - Default for `en_*` locales and fallback
-- **Spanish** (`es`) - Default for `es_*` locales
-
-Language detection is based on environment variables: `LANG`, `LANGUAGE`, or `LC_ALL`.
-
-## 🎯 Examples
-
-### Portuguese Interface
-```
-💭 Sabedoria de C.S. Lewis
-
-"A amizade nasce no momento em que uma pessoa diz para outra: 
-'O quê! Você também? Pensei que eu era o único.'"
-
-— C.S. Lewis
-
-Deseja outra pérola de sabedoria? (s/n)
-```
-
-### English Interface
-```
-💭 C.S. Lewis Wisdom
-
-"Friendship is born at that moment when one person says to another, 
-'What! You too? I thought I was the only one.'"
-
-— C.S. Lewis
-
-Would you like another pearl of wisdom? (y/n)
-```
+- **Portuguese** (`pt`)
+- **English** (`en`) - Default & Fallback
+- **Spanish** (`es`)
+- **French** (`fr`)
+- **German** (`de`)
+- **Italian** (`it`)
 
 ## 🛠️ Development
 
 Clone the repository and install dependencies:
 
 ```bash
-git clone https://github.com/seu-usuario/cslewis-wisdom.git
+git clone https://github.com/rilsonjoas/cslewis-wisdom.git
 cd cslewis-wisdom
 npm install
 ```
 
-Run locally:
+Run locally (interactive dev mode):
 
 ```bash
-node index.js
+npm run dev
 ```
 
-## 📝 Quote Collection
+Build and run final version:
 
-This tool features over 40 inspirational quotes from C.S. Lewis, covering themes like:
+```bash
+npm run build
+npm start
+```
 
-- Faith and Christianity
-- Friendship and Love
-- Education and Learning
-- Courage and Character
-- Humility and Growth
-- Art and Literature
+## 📝 Quote Categories
+
+Quotes are organized into themes, including:
+
+- **faith**: Christianity, spirituality, and belief.
+- **friendship**: The nature and value of friends.
+- **love**: Vulnerability, affection, and grace.
+- **education**: Learning, teaching, and values.
+- **literature**: Books, reading, and art.
+- **character/growth**: Honor, courage, and personal development.
 
 ## 🤝 Contributing
 
 Contributions are welcome! Feel free to:
 
-- Add new quotes in any of the supported languages
-- Improve translations
+- Add new quotes to `src/data/quotes.json`
+- Improve strings in `src/data/ui.json`
 - Add support for new languages
 - Enhance the user interface
 - Fix bugs or improve performance

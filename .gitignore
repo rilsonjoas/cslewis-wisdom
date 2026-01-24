@@ -9,7 +9,7 @@ pids
 *.pid
 *.seed
 *.pid.lock
-
+ 
 # Coverage directory used by tools like istanbul
 coverage/
 *.lcov
@@ -80,3 +80,5 @@ Thumbs.db
 # Logs
 logs
 *.log
+# Build output
+dist/
