@@ -11,6 +11,10 @@ import { dirname, join } from "path";
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = dirname(__filename);
 
+// --- Load Package Info ---
+const pkg = JSON.parse(readFileSync(join(__dirname, "package.json"), "utf8"));
+const VERSION = pkg.version || "0.0.0";
+
 // --- Types ---
 interface Quote {
   text: string;
@@ -50,7 +54,7 @@ const program = new Command();
 program
   .name("cslewis-wisdom")
   .description("CLI tool that displays multilingual C.S. Lewis wisdom quotes")
-  .version("1.1.1")
+  .version(VERSION)
   .option("-l, --lang <code\>", "Specify language (pt, en, es, fr, de, it)")
   .option("-c, --category <name\>", "Filter by category (faith, friendship, love, education, etc.)")
   .action((options) => {
