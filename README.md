@@ -1,41 +1,41 @@
-# 💭 C.S. Lewis Wisdom
+# C.S. Lewis Wisdom
 
-> A multilingual CLI tool that brings timeless wisdom from C.S. Lewis directly to your terminal
+> A multilingual CLI tool that brings quotes from C.S. Lewis to your terminal
 
 [![npm version](https://img.shields.io/npm/v/cslewis-wisdom.svg)](https://www.npmjs.com/package/cslewis-wisdom)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 
-## ✨ Features
+<p align="center">
+  <img src="docs/screenshots/preview.png" alt="C.S. Lewis Wisdom CLI Preview" width="800" />
+</p>
 
-- 🌍 **Multilingual Support**: Automatically detects your system language. Now supports Portuguese, English, Spanish, French, German, and Italian.
-- 📚 **Rich Quote Collection**: Over 60 carefully selected quotes, now categorized.
-- 🎨 **Enhanced Terminal UI**: Uses `boxen` for a professional and elegant display.
-- 🎯 **Advanced CLI**: Filter quotes by category and manually specify languages via flags.
-- 🔄 **Interactive**: Ask for more quotes or exit gracefully.
+## Features
 
-## 🚀 Installation
+- **Multilingual**: detects your system language automatically. Supports Portuguese, English, Spanish, French, German, and Italian.
+- **Quote collection**: over 90 quotes in Portuguese, English, and Spanish (plus a smaller starter set in French, German, and Italian), organized by category, all cross-checked against their original sources.
+- **Terminal UI**: uses `boxen` for a clean, boxed display.
+- **CLI flags**: filter by category, or force a specific language.
+- Prompts for another quote instead of just quitting after one.
 
-### Global Installation (Recommended)
+## Installation
+
+### Global (recommended)
 ```bash
 npm install -g cslewis-wisdom
 ```
 
-### Local Installation
+### Local
 ```bash
 npm install cslewis-wisdom
 ```
 
-## 📖 Usage
-
-Simply run:
+## Usage
 
 ```bash
 cslewis-wisdom
 ```
 
-### 🎯 Flags and Options
-
-Customize your experience using flags:
+### Flags
 
 | Flag | Description | Options |
 | --- | --- | --- |
@@ -53,20 +53,18 @@ cslewis-wisdom --lang en --category faith
 cslewis-wisdom -l it -c love
 ```
 
-## 🌐 Language Support
+## Language support
 
-The application automatically detects your system locale and displays content in:
+The CLI detects your system locale and falls back to English if it can't:
 
-- **Portuguese** (`pt`)
-- **English** (`en`) - Default & Fallback
-- **Spanish** (`es`)
-- **French** (`fr`)
-- **German** (`de`)
-- **Italian** (`it`)
+- Portuguese (`pt`)
+- English (`en`) — default and fallback
+- Spanish (`es`)
+- French (`fr`)
+- German (`de`)
+- Italian (`it`)
 
-## 🛠️ Development
-
-Clone the repository and install dependencies:
+## Development
 
 ```bash
 git clone https://github.com/rilsonjoas/cslewis-wisdom.git
@@ -74,50 +72,45 @@ cd cslewis-wisdom
 npm install
 ```
 
-Run locally (interactive dev mode):
+Run locally in dev mode:
 
 ```bash
 npm run dev
 ```
 
-Build and run final version:
+Build and run the compiled version:
 
 ```bash
 npm run build
 npm start
 ```
 
-## 📝 Quote Categories
+## Quote categories
 
-Quotes are organized into themes, including:
+- **faith** — Christianity, spirituality, belief
+- **friendship** — the nature and value of friends
+- **love** — vulnerability, affection, grace
+- **education** — learning, teaching, values
+- **literature** — books, reading, art
+- **character / growth** — honor, courage, personal development
 
-- **faith**: Christianity, spirituality, and belief.
-- **friendship**: The nature and value of friends.
-- **love**: Vulnerability, affection, and grace.
-- **education**: Learning, teaching, and values.
-- **literature**: Books, reading, and art.
-- **character/growth**: Honor, courage, and personal development.
+## Contributing
 
-## 🤝 Contributing
+- Add quotes to `src/data/quotes.json` — please keep the source verifiable; C.S. Lewis has a long history of misattributed quotes circulating online, so anything added should trace back to an actual book or letter, not just a quote-of-the-day site.
+- Improve the UI strings in `src/data/ui.json`
+- Add a new language
+- Fix bugs, improve the terminal UI, whatever you find
 
-Contributions are welcome! Feel free to:
-
-- Add new quotes to `src/data/quotes.json`
-- Improve strings in `src/data/ui.json`
-- Add support for new languages
-- Enhance the user interface
-- Fix bugs or improve performance
-
-## 📄 License
+## License
 
 MIT © Rilson Joás
 
-## 🙏 Acknowledgments
+## Acknowledgments
 
-- **C.S. Lewis** - For the timeless wisdom
-- **Chalk** - For beautiful terminal colors
-- The Node.js community for excellent CLI tools
+- C.S. Lewis, for the source material
+- Chalk and boxen, for making a terminal app look decent
+- The Node.js CLI ecosystem generally
 
 ---
 
-*"We read to know we're not alone." - C.S. Lewis*
+*"There are no ordinary people. You have never talked to a mere mortal." — C.S. Lewis, The Weight of Glory*
